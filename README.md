@@ -118,6 +118,8 @@ The cleaned dataset was remodelled into a dimensional star schema for scalable a
 
 A structured Power BI analytical layer was developed using DAX.
 
+[Interact With Dashboard](https://app.powerbi.com/view?r=eyJrIjoiODJkOWUwNzktZDhjNC00ODlkLTkxNjAtMjA0NjE2ZWMxNWU4IiwidCI6ImIyMTFiMjkwLWFkNzUtNGJlNC1iZDk3LWI5Y2MxZDlmMzdlZCJ9)
+
 #### Core KPIs
 
 * Total Applications
