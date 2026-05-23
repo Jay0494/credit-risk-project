@@ -93,8 +93,8 @@ Net revenue formula:
 `Net Revenue = Interest Income − Funding Cost − Provision Cost`
 
 #### Dimensional Modelling
-
 The cleaned dataset was remodelled into a dimensional star schema for scalable analytics.
+<img width="1182" height="1003" alt="MODEL" src="https://github.com/user-attachments/assets/8f253204-30b7-4017-a545-c5709241c39b" />
 
 **Fact Table**
 
@@ -333,14 +333,11 @@ credit-risk-portfolio-analysis/
 ## Dashboard Screenshots
 
 ### Lending Portfolio Performance Overview
-
-(Add dashboard screenshot here)
+<img width="764" height="458" alt="image (2)" src="https://github.com/user-attachments/assets/30e416c2-b916-4c06-b9f4-999a24fbb07d" />
 
 ### Portfolio Risk Diagnostics & Strategic Actions
+<img width="764" height="459" alt="image (1)" src="https://github.com/user-attachments/assets/a87c0a62-d506-4e00-862b-af4f003c541f" />
 
-(Add dashboard screenshot here)
-
----
 
 ## Business Outcome
 
