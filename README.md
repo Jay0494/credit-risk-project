@@ -218,6 +218,7 @@ This created structurally unsustainable lending economics.
 ---
 
 #### 4. High-risk borrowers were not the profitability problem
+<img width="241" height="129" alt="image (4)" src="https://github.com/user-attachments/assets/3526caed-a297-401a-bd27-1df31821f09c" />
 
 Average net revenue per approved loan:
 
@@ -231,6 +232,7 @@ Contrary to traditional assumptions, higher-risk borrowers delivered stronger un
 ---
 
 #### 5. Capital allocation was inefficient
+<img width="248" height="138" alt="image (3)" src="https://github.com/user-attachments/assets/92af91de-c714-4d75-ac8e-6330ee524752" />
 
 Exposure concentration by segment:
 
