@@ -1,111 +1,100 @@
-Here’s a professional **README.md** for your GitHub repository.
-
-Copy this directly into your `README.md`.
-
-````markdown
 # Credit Risk Portfolio Performance Analysis
 
 ## Project Overview
 
-This project presents an end-to-end credit risk and lending portfolio analytics solution developed to investigate the drivers of weak profitability within an unsecured lending portfolio.
+This project delivers an end-to-end credit risk and lending portfolio analytics solution designed to investigate the drivers of weak profitability within an unsecured lending portfolio.
 
 Despite relatively stable lending demand and improving default performance, the portfolio continued to generate negative financial returns. The objective of this analysis was to identify the structural causes of underperformance and provide strategic, data-driven recommendations to improve risk-adjusted profitability.
 
-The project was delivered using **MySQL for data engineering and Power BI for analytical reporting**, following a structured analytics workflow from raw data ingestion through executive decision-support reporting.
+The project was developed using **MySQL for data engineering and Power BI for analytical reporting**, covering the full analytics lifecycle from raw data preparation to executive decision-support reporting.
 
 ---
 
 ## Business Problem
 
-The portfolio exhibited an apparent contradiction:
+The lending portfolio exhibited an apparent contradiction:
 
-- borrower default performance improved year-over-year
-- lending activity remained commercially active
-- yet overall portfolio profitability remained negative
+* Borrower default performance improved year-over-year
+* Lending activity remained commercially active
+* Yet overall portfolio profitability remained negative
 
-This raised key business questions:
+This raised critical business questions:
 
-- Why is the lending portfolio underperforming financially despite relatively controlled default behaviour?
-- Which borrower segments are driving weak profitability?
-- Is the issue caused by credit defaults, provisioning pressure, pricing inefficiency, or exposure concentration?
-- What strategic portfolio actions can improve profitability while maintaining responsible lending practices?
+* Why is the lending portfolio underperforming financially despite relatively controlled default behaviour?
+* Which borrower segments are driving weak profitability?
+* Is the issue caused by credit defaults, provisioning pressure, pricing inefficiency, or exposure concentration?
+* What strategic portfolio actions can improve profitability while maintaining responsible lending practices?
 
 ---
 
-## Objectives
+## Project Objectives
 
-The objectives of this project were to:
+This project aimed to:
 
-- build a trusted analytics-ready lending dataset
-- assess portfolio performance across risk, profitability, and underwriting dimensions
-- identify the structural drivers of weak lending economics
-- develop executive dashboards for monitoring and strategic decision support
-- recommend actionable credit risk optimisation strategies
+* Build a trusted analytics-ready lending dataset
+* Assess portfolio performance across risk, profitability, and underwriting dimensions
+* Identify the structural drivers of weak lending economics
+* Develop executive dashboards for portfolio monitoring and strategic decision support
+* Recommend actionable credit risk optimisation strategies
 
 ---
 
 ## Tools & Technologies
 
-- **MySQL**
-- **SQL**
-- **Power BI**
-- **DAX**
-- **Dimensional Data Modelling**
-- **Credit Risk Analytics**
-- **Portfolio Performance Analysis**
+* MySQL
+* SQL
+* Power BI
+* DAX
+* Dimensional Data Modelling
+* Credit Risk Analytics
+* Portfolio Performance Analysis
 
 ---
 
 ## Methodology
 
-This project followed a structured **DMAIC (Define – Measure – Analyze – Improve – Control)** framework.
+This analysis followed a structured **DMAIC (Define – Measure – Analyze – Improve – Control)** framework.
 
-### 1. Define
-Established the business problem around persistent portfolio underperformance despite improving default behaviour.
+### Define
 
----
+Established the business problem around persistent portfolio underperformance despite improving borrower credit performance.
 
-### 2. Measure
+### Measure
 
 #### Data Engineering & Validation
-Built a structured SQL transformation pipeline including:
 
-- raw data staging
-- data type standardisation
-- SQL data quality auditing using `UNION ALL`
-- remediation of invalid business logic
-- lifecycle date correction
-- financial metric recalculation
+A structured SQL transformation pipeline was developed, including:
+
+* Raw data staging
+* Data type standardisation
+* SQL data quality auditing using `UNION ALL`
+* Business rule validation
+* Lifecycle date correction
+* Financial metric recalculation
 
 Validation checks included:
 
-- null completeness checks
-- duplicate application detection
-- debt-to-income ratio validation
-- credit utilisation validation
-- affordability score checks
-- fraud risk score validation
-- expected loss formula validation
-- net revenue calculation validation
-- loan lifecycle date integrity checks
+* Null completeness checks
+* Duplicate application detection
+* Debt-to-income ratio validation
+* Credit utilisation validation
+* Affordability score checks
+* Fraud risk score validation
+* Expected loss formula validation
+* Net revenue calculation validation
+* Loan lifecycle date integrity checks
 
 Expected loss formula:
 
-```sql
-Expected Loss = PD × LGD × EAD
-````
+`Expected Loss = PD × LGD × EAD`
 
-Net revenue logic:
+Net revenue formula:
 
-```sql
-Net Revenue = Interest Income - Funding Cost - Provision Cost
-```
-
----
+`Net Revenue = Interest Income − Funding Cost − Provision Cost`
 
 #### Dimensional Modelling
 
-The cleansed operational dataset was remodelled into a dimensional star schema for scalable analytics.
+The cleaned dataset was remodelled into a dimensional star schema for scalable analytics.
 
 **Fact Table**
 
@@ -125,13 +114,11 @@ The cleansed operational dataset was remodelled into a dimensional star schema f
 
 ---
 
-### 3. Analyze
+### Analyze
 
 A structured Power BI analytical layer was developed using DAX.
 
-Core KPIs included:
-
-#### Portfolio KPIs
+#### Core KPIs
 
 * Total Applications
 * Approved Loans
@@ -141,81 +128,77 @@ Core KPIs included:
 * Expected Credit Loss
 * Net Revenue
 * Portfolio NPV
-
-#### Profitability KPIs
-
 * Interest Income
 * Funding Cost
 * Provision Cost
 * Net Margin
 * Provision Burden %
 * Cost of Funds Ratio %
-* Avg Net Revenue per Approved Loan
+* Average Net Revenue per Approved Loan
 
-#### Risk KPIs
-
-* Average PD
-* Average LGD
-* Days Past Due
-* Missed Payments
-* Exposure Concentration
-
----
-
-### Dashboard 1 — Lending Portfolio Performance Overview
+#### Dashboard 1 — Lending Portfolio Performance Overview
 
 Descriptive analytics focused on:
 
-* lending demand trends
-* approval performance
-* default behaviour
-* portfolio exposure
-* expected credit loss
-* profitability trends
-* NPV
-* loan purpose profitability
-* exposure by loan tenor
+* Lending demand trends
+* Approval performance
+* Default behaviour
+* Portfolio exposure
+* Expected credit loss
+* Profitability trends
+* Net present value
+* Loan purpose profitability
+* Exposure by loan tenor
 
----
-
-### Dashboard 2 — Portfolio Risk Diagnostics & Strategic Actions
+#### Dashboard 2 — Portfolio Risk Diagnostics & Strategic Actions
 
 Diagnostic and prescriptive analytics focused on:
 
-* profitability breakdown
-* provision burden analysis
-* segment-level unit economics
-* exposure concentration by risk segment
-* strategic risk opportunity matrix
-* management action recommendations
+* Profitability breakdown
+* Provision burden analysis
+* Segment-level unit economics
+* Exposure concentration by risk segment
+* Strategic risk opportunity matrix
+* Management action recommendations
 
 ---
 
 ## Key Findings
 
-### 1. Default performance improved, but profitability remained weak
+### Portfolio Performance
 
+* Total Applications: **6,314**
+* Approved Loans: **4,279**
+* Approval Rate: **67.8%**
 * Default Rate: **9.7%**
-* YoY Default Improvement: **-3.9%**
+* Portfolio Exposure: **£50.29M**
+* Expected Credit Loss: **£9.95M**
 * Net Revenue: **-£351K**
 * Portfolio NPV: **-£339K**
 
-Despite better realised repayment behaviour, profitability remained negative.
+---
+
+### Key Business Insights
+
+#### 1. Default performance improved, but profitability remained weak
+
+Default rates improved by **3.9% year-over-year**, indicating stronger realised borrower repayment behaviour.
+
+However, the portfolio remained financially unprofitable, suggesting that default deterioration was not the primary issue.
 
 ---
 
-### 2. Expected credit loss remained elevated
+#### 2. Expected credit loss remained elevated
 
-* Portfolio Exposure: **£50.29M**
-* Expected Credit Loss: **£9.95M**
-* Exposure YoY: **+1.0%**
-* Expected Loss YoY: **+1.0%**
+Portfolio exposure increased by **1.0% year-over-year**, with expected credit loss increasing at the same rate.
 
-Risk exposure remained elevated despite lower defaults.
+This indicates that overall credit risk exposure remained elevated despite lower realised defaults.
 
 ---
 
-### 3. Provisioning pressure was the primary profitability driver
+#### 3. Provisioning pressure was the primary profitability driver
+
+Portfolio profitability analysis showed:
 
 * Interest Income: **£11.1M**
 * Provision Cost: **£10.0M**
@@ -225,36 +208,36 @@ Risk exposure remained elevated despite lower defaults.
 
 For every £1 earned:
 
-* ~90p consumed by provisioning
-* ~14p consumed by funding costs
+* approximately 90p was consumed by provisioning
+* approximately 14p was consumed by funding costs
 
-Portfolio economics were structurally unsustainable.
+This created structurally unsustainable lending economics.
 
 ---
 
-### 4. High-risk borrowers were not the profitability problem
+#### 4. High-risk borrowers were not the profitability problem
 
-Avg Net Revenue per Approved Loan:
+Average net revenue per approved loan:
 
 * High Risk: **+£1,355**
 * Subprime: **+£344**
 * Prime: **-£232**
 * Near Prime: **-£245**
 
-Higher-risk segments delivered stronger unit economics.
+Contrary to traditional assumptions, higher-risk borrowers delivered stronger unit economics.
 
 ---
 
-### 5. Capital allocation was inefficient
+#### 5. Capital allocation was inefficient
 
-Exposure mix:
+Exposure concentration by segment:
 
 * Near Prime: **39.9%**
 * Prime: **36.5%**
 * Subprime: **21.6%**
 * High Risk: **2.0%**
 
-Over 76% of exposure sat in economically weak segments.
+Over 76% of portfolio exposure sat within economically weak segments, creating significant profitability pressure.
 
 ---
 
@@ -264,51 +247,69 @@ Based on the analysis:
 
 ### Tighten Near Prime Underwriting
 
-Because:
+Because this segment had:
 
-* highest exposure
-* weakest economics
-* highest provision burden
+* highest portfolio exposure
+* negative unit economics
+* highest provisioning burden
+
+Recommended actions:
+
+* stricter affordability thresholds
+* tighter scorecard cut-offs
+* reduced approval appetite
 
 ---
 
 ### Reprice Prime Borrowers
 
-Because:
+Because this segment generated negative economic returns despite lower perceived risk.
 
-* negative unit profitability
-* weak risk-adjusted economics
+Recommended actions:
+
+* APR recalibration
+* pricing segmentation review
+* risk-adjusted repricing
 
 ---
 
 ### Selective Subprime Growth
 
-Because:
+Because this segment demonstrated positive returns with manageable risk burden.
 
-* positive returns
-* manageable risk burden
+Recommended actions:
+
+* controlled expansion
+* continued performance monitoring
 
 ---
 
 ### Cautious High-Risk Expansion
 
-Because:
+Because this segment demonstrated the strongest unit profitability but currently represents minimal exposure.
 
-* strongest unit economics
-* currently under-allocated
+Recommended actions:
+
+* controlled expansion
+* close profitability validation
+* enhanced monitoring
 
 ---
 
 ### Product Pricing Review
 
-Because:
-all loan purposes showed negative profitability.
+Because all loan purposes generated negative profitability.
+
+Recommended actions:
+
+* reassess product pricing adequacy
+* align pricing with embedded risk exposure
 
 ---
 
 ## Repository Structure
 
-```text
+```bash
 credit-risk-portfolio-analysis/
 │
 ├── sql/
@@ -333,11 +334,11 @@ credit-risk-portfolio-analysis/
 
 ### Lending Portfolio Performance Overview
 
-(Add screenshot here)
+(Add dashboard screenshot here)
 
 ### Portfolio Risk Diagnostics & Strategic Actions
 
-(Add screenshot here)
+(Add dashboard screenshot here)
 
 ---
 
@@ -345,16 +346,11 @@ credit-risk-portfolio-analysis/
 
 This analysis showed that portfolio underperformance was not primarily caused by worsening borrower default behaviour.
 
-The root causes were:
+The core drivers were:
 
-* excessive provisioning pressure
-* inefficient exposure allocation
-* weak economics in dominant borrower segments
-* pricing inadequacy relative to embedded risk
+* Excessive provisioning pressure
+* Inefficient capital allocation
+* Weak economics in dominant borrower segments
+* Pricing inadequacy relative to embedded credit risk
 
-The project demonstrates a full end-to-end credit analytics workflow spanning data engineering, dimensional modelling, credit risk analysis, executive reporting, and strategic portfolio optimisation.
-
-```
-
-Next step after this: **embed your dashboard screenshots into the README so the repo looks visually strong.**
-```
+The analysis demonstrates a full end-to-end credit analytics workflow spanning data engineering, dimensional modelling, credit risk analysis, executive reporting, and strategic portfolio optimisation.
